@@ -1,0 +1,8 @@
+c:\users\gal\documents\visual studio 2015\Projects\SYW\SYW\bin\Debug\SYW.exe.config
+c:\users\gal\documents\visual studio 2015\Projects\SYW\SYW\bin\Debug\SYW.exe
+c:\users\gal\documents\visual studio 2015\Projects\SYW\SYW\bin\Debug\SYW.pdb
+c:\users\gal\documents\visual studio 2015\Projects\SYW\SYW\obj\Debug\SYW.csprojResolveAssemblyReference.cache
+c:\users\gal\documents\visual studio 2015\Projects\SYW\SYW\obj\Debug\SYW.exe
+c:\users\gal\documents\visual studio 2015\Projects\SYW\SYW\obj\Debug\SYW.pdb
+c:\users\gal\documents\visual studio 2015\Projects\SYW\SYW\bin\Debug\CsvHelper.dll
+c:\users\gal\documents\visual studio 2015\Projects\SYW\SYW\bin\Debug\CsvHelper.xml
