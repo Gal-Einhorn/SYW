@@ -1,9 +1,8 @@
-﻿using System;
-using SYW.GB.WriteToFile;
+﻿using SYW.GB.WriteToFile;
 
 namespace SYW.GB
 {
-    public class ProductsFromPlatformFetcher
+    public class GreenBox
     {
         public QueryFetcher QueryFetcher { get; set; }
         public CallsInvoker CallsInvoker { get; set; }

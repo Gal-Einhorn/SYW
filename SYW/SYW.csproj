@@ -48,7 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GB\ProductsFromPlatformFetcher.cs" />
+    <Compile Include="GB\GreenBox.cs" />
     <Compile Include="Models\PlatformResponse.cs" />
     <Compile Include="GB\ApiHandler\ProductsParser.cs" />
     <Compile Include="GB\ApiHandler\CallsInvoker.cs" />

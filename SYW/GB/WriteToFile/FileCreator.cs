@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
+﻿using System.Collections.Generic;
 using System.IO;
-using System.Text;
 using CsvHelper;
 
 namespace SYW.GB.WriteToFile
@@ -15,6 +12,7 @@ namespace SYW.GB.WriteToFile
             using (var sw = new StreamWriter(path))
             {
                 var writer = new CsvWriter(sw);
+                writer.WriteHeader<Product>();
                 foreach (var product in products)
                 {
                     writer.WriteRecord(product);

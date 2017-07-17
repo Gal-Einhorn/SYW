@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using SYW.GB;
+﻿using SYW.GB;
 
 namespace SYW
 {
@@ -11,8 +6,8 @@ namespace SYW
     {
         static void Main(string[] args)
         {
-            var productsFromPlatformFetcher = new ProductsFromPlatformFetcher();
-            productsFromPlatformFetcher.Run();
+            var greenBox = new GreenBox();
+            greenBox.Run(); 
         }
     }
 }
