@@ -1,23 +1,18 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Diagnostics;
 using System.IO;
-using CsvHelper;
 
 namespace SYW.GB.WriteToFile
 {
     public class FileCreator
     {
-        public void Write(List<Product> products)
+        public string Create()
         {
-            var path = @"C:\Products\products.csv";
-            using (var sw = new StreamWriter(path))
-            {
-                var writer = new CsvWriter(sw);
-                writer.WriteHeader<Product>();
-                foreach (var product in products)
-                {
-                    writer.WriteRecord(product);
-                }
-            }
+            var timestamp = DateTime.Now.ToString("yyyy-MM-dd-HH_mm_ss");
+            var path = @"C:\temp\" +timestamp + ".csv" ;
+            var file = File.Create(path);
+            file.Close();
+            return (path);
         }
     }
 }

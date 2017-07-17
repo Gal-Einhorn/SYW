@@ -4,19 +4,14 @@ namespace SYW.GB
 {
     public class GreenBox
     {
-        public QueryFetcher QueryFetcher { get; set; }
-        public CallsInvoker CallsInvoker { get; set; }
-        public RequestSyntaxCreator RequestSyntaxCreator { get; set; }
-        public ProductsParser ProductsParser { get; set; }
-        public FileCreator FileCreator { get; set; }
-  
+        public QueryFetcher QueryFetcher = new QueryFetcher();
+        public CallsInvoker CallsInvoker = new CallsInvoker();
+        public RequestSyntaxCreator RequestSyntaxCreator = new RequestSyntaxCreator();
+        public ProductsParser ProductsParser = new ProductsParser();
+        public FileContentCreator FileContentCreator = new FileContentCreator();
+
         public void Run()
         {
-            QueryFetcher = new QueryFetcher();
-            CallsInvoker = new CallsInvoker();
-            RequestSyntaxCreator = new RequestSyntaxCreator();
-            ProductsParser = new ProductsParser();
-            FileCreator = new FileCreator();
 
             var query = QueryFetcher.GetQuery();
             var uri = RequestSyntaxCreator.BuildUriFromQuery(query);
@@ -24,7 +19,7 @@ namespace SYW.GB
 
             var products = ProductsParser.Parse(response);
             
-            FileCreator.Write(products);
+            FileContentCreator.Write(products);
 
         }
     }

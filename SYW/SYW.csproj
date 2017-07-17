@@ -49,12 +49,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GB\GreenBox.cs" />
+    <Compile Include="GB\WriteToFile\FileCreator.cs" />
     <Compile Include="Models\PlatformResponse.cs" />
     <Compile Include="GB\ApiHandler\ProductsParser.cs" />
     <Compile Include="GB\ApiHandler\CallsInvoker.cs" />
     <Compile Include="GB\ApiHandler\QueryFetcher.cs" />
     <Compile Include="GB\ApiHandler\RequestSyntaxCreator.cs" />
-    <Compile Include="GB\WriteToFile\FileCreator.cs" />
+    <Compile Include="GB\WriteToFile\FileContentCreator.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
