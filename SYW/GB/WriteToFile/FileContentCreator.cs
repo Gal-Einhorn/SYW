@@ -15,10 +15,8 @@ namespace SYW.GB.WriteToFile
             {
                 var writer = new CsvWriter(sw);
                 writer.WriteHeader<Product>();
-                foreach (var product in products)
-                {
-                    writer.WriteRecord(product);
-                }
+                writer.WriteRecords(products);
+               
             }
         }
     }
