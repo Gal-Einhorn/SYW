@@ -6,3 +6,10 @@ c:\users\gal\documents\visual studio 2015\Projects\SYW\SYW\obj\Debug\SYW.exe
 c:\users\gal\documents\visual studio 2015\Projects\SYW\SYW\obj\Debug\SYW.pdb
 c:\users\gal\documents\visual studio 2015\Projects\SYW\SYW\bin\Debug\CsvHelper.dll
 c:\users\gal\documents\visual studio 2015\Projects\SYW\SYW\bin\Debug\CsvHelper.xml
+C:\Users\gal\documents\visual studio 2015\Projects\SYW\SYW\bin\Debug\FluentNHibernate.dll
+C:\Users\gal\documents\visual studio 2015\Projects\SYW\SYW\bin\Debug\Iesi.Collections.dll
+C:\Users\gal\documents\visual studio 2015\Projects\SYW\SYW\bin\Debug\NHibernate.dll
+C:\Users\gal\documents\visual studio 2015\Projects\SYW\SYW\bin\Debug\FluentNHibernate.pdb
+C:\Users\gal\documents\visual studio 2015\Projects\SYW\SYW\bin\Debug\FluentNHibernate.xml
+C:\Users\gal\documents\visual studio 2015\Projects\SYW\SYW\bin\Debug\Iesi.Collections.xml
+C:\Users\gal\documents\visual studio 2015\Projects\SYW\SYW\bin\Debug\NHibernate.xml
