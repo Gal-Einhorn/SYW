@@ -7,10 +7,11 @@ namespace SYW.SUE.ReadFromFile
 {
     public class ProductsFromFileParser
     {
-        public FileLocater FileLocater = new FileLocater();
+        public FileLocater FileLocater { get; set; }
 
-        public List<Product> Parse()
+        public List<Product> Parse(FileLocater fileLocater)
         {
+            FileLocater = fileLocater;
             var Folder = @"C:\temp\";
             var FileName = FileLocater.Locate(Folder);
             //var Products = new List<Product>();

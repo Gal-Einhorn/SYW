@@ -1,18 +1,23 @@
-﻿using SYW.SUE.DataAcess;
+﻿using SYW.SUE.DataBase;
 using SYW.SUE.ReadFromFile;
 
 namespace SYW.SUE
 {
     public class SUE
     {
-        public FileLocater FileLocater = new FileLocater();
-        public ProductsFromFileParser ProductsFromFileParser = new ProductsFromFileParser();
-        public ProductMapper ProductMapper = new ProductMapper();
-        public SessionFactoryInitializer SessionFactoryInitializer = new SessionFactoryInitializer();
+        public FileLocater FileLocater { get; set; }
+        public ProductsFromFileParser ProductsFromFileParser { get; set; }
+        public ProductMapper ProductMapper { get; set; }
+        public SessionFactoryInitializer SessionFactoryInitializer { get; set; }
 
-        public void Run()
+        public void Run(FileLocater fileLocater, ProductsFromFileParser productsFromFileParser, ProductMapper productMapper, SessionFactoryInitializer sessionFactoryInitializer)
         {
-            var products = ProductsFromFileParser.Parse();
+            FileLocater = fileLocater;
+            ProductsFromFileParser = productsFromFileParser;
+            ProductMapper = productMapper;
+            SessionFactoryInitializer = sessionFactoryInitializer;
+
+            var products = ProductsFromFileParser.Parse(FileLocater);
         }
     }
 }

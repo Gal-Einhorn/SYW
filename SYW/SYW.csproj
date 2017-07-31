@@ -71,8 +71,9 @@
     <Compile Include="Models\Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SUE\DataAcess\ProductMapper.cs" />
-    <Compile Include="SUE\DataAcess\SessionFactoryInitializer.cs" />
+    <Compile Include="SUE\DataBase\DbInserter.cs" />
+    <Compile Include="SUE\DataBase\ProductMapper.cs" />
+    <Compile Include="SUE\DataBase\SessionFactoryInitializer.cs" />
     <Compile Include="SUE\ReadFromFile\FileLocater.cs" />
     <Compile Include="SUE\ReadFromFile\ProductsFromFileParser.cs" />
     <Compile Include="SUE\SUE.cs" />

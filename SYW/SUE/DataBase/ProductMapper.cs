@@ -1,6 +1,6 @@
 ﻿using FluentNHibernate.Mapping;
 
-namespace SYW.SUE.DataAcess
+namespace SYW.SUE.DataBase
 {
     public class ProductMapper : ClassMap<Product>
     {
